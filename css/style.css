@@ -15,7 +15,7 @@ body {
     justify-content: space-between;
     height: 100px;
     background: rgba(0, 47, 103, 0.85);
-    position: absolute;
+    position: sticky;
     left: 0;
     top: 0;
     width: 100%;
@@ -75,7 +75,7 @@ body {
     height: 850px;
 }
 .heroHeading {
-    padding-top: 270px;
+    padding-top: 220px;
     margin-left: 100px;
 }
 .subTitle {
@@ -88,4 +88,7 @@ body {
 .title {
     font-size: 62px;
     color: white;
+}
+.section {
+    height:calc(100vh - 100px);
 }
