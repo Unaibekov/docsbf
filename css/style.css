@@ -952,14 +952,14 @@ textarea {
       font-size: 26px;
   }
   .heading-subtitle {
-      font-size: 22px;
+      font-size: 18px;
       margin: 15px 0 20px;
   }
   .heading-image {
     height: 30vh;
     width: auto;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 10%;
   }
 }
 @media (max-width: 375px) {
