@@ -71,7 +71,7 @@ $(document).ready(function(){
         adaptiveHeight:true,
         speed:700,
         easing:'ease',
-        autoplay:true,
+        autoplay:false,
         autoplaySpeed:5000,
         pauseOnFocus:true,
         pauseOnHover:true,
@@ -80,5 +80,4 @@ $(document).ready(function(){
     });
 });
 
-
-
+new WOW().init();
