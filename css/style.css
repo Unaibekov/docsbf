@@ -283,6 +283,7 @@ a {
   height: 500px;
   width: 500px;
   margin: 50px 70px 50px 0;
+  margin-bottom: 0;
 }
 .heading-image img{
   height: 100%;
@@ -958,6 +959,7 @@ textarea {
     height: 30vh;
     width: auto;
     margin: auto;
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 375px) {
