@@ -948,14 +948,14 @@ textarea {
       padding: 15px;
   }
   .heading-title {
-      font-size: 34px;
+      font-size: 26px;
   }
   .heading-subtitle {
       font-size: 22px;
       margin: 15px 0 20px;
   }
   .heading-image {
-    height: 40vh;
+    height: 30vh;
     width: auto;
     margin: auto;
   }
