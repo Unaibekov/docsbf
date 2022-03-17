@@ -4,36 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documents</title>
+    <title>Росток добра</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animate.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+<div id="hero" class="lgray">
     <header class="header">
         <div class="logo">
             <img id="top" src="img/logoTnFlame.svg" alt="logoFlame">
             <img id="top" src="img/logoTnName.svg" class="logoName" alt="logoName">
         </div>
-        <div style="margin-left: auto;" class="dflex align-center">
-            <a href="#" class="link">Главная</a>
-            <a id="main" href="#" class="link">Наши проекты</a>
-            <a id="docs" href="#" class="link">Документы</a>
-        </div>
+        <nav class="nav">
+            <button class="menu-button">
+                <img src="img/menu.svg" alt="menu-icon" class="menu-icon">
+            </button>
+            <button class="menu-close">
+                <img src="img/arrow.svg" alt="menu-close-icon" class="menu-close-icon">
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="#about" class="nav-menu-link">О нас</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#projects" class="nav-menu-link">Наши проекты</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#documents" class="nav-menu-link">Документы</a>
+                </li>
+
+                <li class="nav-contacts">
+                    <span><a class="contacts" href="tel:+78002345627">Поиск</a></span>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <div id="projects" class="megaMenu">
-        <div class="container">
-            eeyeyeryergrg
-        </div>
-    </div>
-    <div id="documents" class="megaMenu">
-        <div class="container">
-            sgrtetete
-        </div>
-    </div>
     <div class="slider">
         <div class="slider-item">
             <div class="container">
@@ -76,8 +84,8 @@
                         </div>
                         <div class="heading-subtitle">DAA – эксклюзивный пропуск для жителей Альметьевска в мир цифрового творчества.
                         </div>
+                        <a href="#" id="authHeading" class="button">Подробнее</a>
                     </div>
-                    <a href="#" id="authHeading" class="button">Подробнее</a>
                 </div>
             </div>
         </div>
@@ -92,8 +100,8 @@
                         </div>
                         <div class="heading-subtitle">Выставка тюркских музыкальных инструментов, а также инструментов народов мира, включающая в себя настоящие произведения искусства.
                         </div>
+                        <a href="#" id="authHeading" class="button">Подробнее</a>
                     </div>
-                    <a href="#" id="authHeading" class="button">Подробнее</a>
                 </div>
             </div>
         </div>
@@ -108,13 +116,119 @@
                         </div>
                         <div class="heading-subtitle">Проект по созданию в школах современных классов биологии в виде лабораторий.
                         </div>
+                        <a href="#" id="authHeading" class="button">Подробнее</a>
                     </div>
-                    <a href="#" id="authHeading" class="button">Подробнее</a>
                 </div>
             </div>
         </div>
     </div>
+    <a href="#hero" id="top-second" class="top-second"><span></span></a>
+</div>
+<section id="about">
+    <div class="container">
+        <div class="title">О нас</div>
+        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+    </div>
+</section>
+<section id="projects" class="lgray">
+    <div class="container">
+        <div class="title">Наши проекты</div>
+        <div class="cards">
+            <a href="#" class="card">
+                <img src="img/logo-almetrika.PNG" alt="almetrika">
+                <div>Интерактивный центр «Альметрика»</div>
+                </a>
+            <a href="#" class="card">
+                <img src="img/logo-a1002.PNG" alt="А1002">
+                <div>Школа анимации «А1002»</div>
+            </a>
+            <a href="#" class="card">
+                <img src="img/logo-daa.svg" alt="daa">
+                <div>Dиджитал Академия Альметьевск</div>
+            </a>
+            <a href="#" class="card">
+                <img src="img/slider-dombra.png" alt="instrumental">
+                <div>Музей тюркских музыкальных инструментов</div>
+            </a>
+            <a href="#" class="card">
+                <img src="img/logo-rostok.svg" alt="rosrokDobra">
+                <div>Проект - «Биологические лаборатории с теплицами»</div>
+            </a>
+        </div>
+    </div>
+</section>
+<section id='documents'>
+    <div class="container docs">
+        <div class="section-heading">
+            <div class="title">Инструкция</div>
+        </div>
+        <div data-wow-delay="0.1s" class="doc wow fadeInUp">
+            <div class="question">
+                <h3>Основные сведения</h3>
+                <svg width='15' height='10' viewBox="0 0 55 55">
+                    <path fill='#7ea629' d="M31.836,43.006c0.282-0.281,0.518-0.59,0.725-0.912L54.17,20.485c2.107-2.109,2.109-5.528,0-7.638
+                        c-2.109-2.107-5.527-2.109-7.638,0l-18.608,18.61L9.217,12.753c-2.109-2.108-5.527-2.109-7.637,0
+                        C0.527,13.809-0.002,15.19,0,16.571c-0.002,1.382,0.527,2.764,1.582,3.816l21.703,21.706c0.207,0.323,0.445,0.631,0.729,0.913
+                        c1.078,1.078,2.496,1.597,3.91,1.572C29.336,44.604,30.758,44.084,31.836,43.006z"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <div><b>Что вы видите?</b></div>         
+                <div>У ростка почти нет корней, всего 1 уровень листвы (1-3 листочка).</div>
+                <div class="media">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/muIpl92Smwg" title="step 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div><b>Что нужно делать?</b></div> 
+                <div>В течении 2-4 недель обеспечивать необходимые условия для роста:
+                    <ul>
+                        <li>температура окружающей среды – комнатная (22-26°С);</li>
+                        <li>освещённость 2000-2500 Люксов – 2 режим яркости лампы освещения;</li>
+                        <li>длительность освещения 6-8 часов в день;</li>
+                        <li>избегать попадания прямых солнечных лучей.</li>
+                    </ul>
+                </div>
+                <div class="divider"></div>
+                <div><b>Чего ожидать?</b></div> 
+                    <ul>
+                        <li>появление корней;</li>
+                        <li>появление новых листьев;</li>
+                    </ul>
+                <div class="divider"></div>
+                <div><b>Идеальный результат</b></div> 
+                <ul>
+                    <li>на ростке появилось 2-3 уровня новых листьев;</li>
+                    <li>корни доросли практически до дна пробирки;</li>
+                    <li>росток стал высотой 2,5-3,5 см;</li>
+                    <li>цвет листьев естественно-зелёный без дефектов;</li>
+                    <li>корни белого цвета, разветвлённые и продолжают расти.</li>
+                </ul>
+                <div class="divider"></div>
+                <div><b>Что-то пошло не так</b></div> 
+                
+                    <div><b>Вопрос:</b> листья не такие зелёные и слегка завёрнуты.<br>
+                    <b>Решение:</b> включаем свет на 3 режим яркости на 3-4 дня и/или переносим «Росток добра» в комфортные температурные условия 22-24°С.</div>
+                    
+                    <div><b>Вопрос:</b> нет корней, но листья зелёные.<br>
+                    <b>Решение:</b> включать свет на 3 режим яркости на 10-12 часов в день, перенести росток в температуру 24-25°С и содержать в таких условиях до появления первых корней</em></div>
+
+                    <div><b>Вопрос:</b> нет корней, листья потеряли цвет, свернулись и завяли.<br>
+                    <b>Решение:</b>
+                        <br>                        
+                        - Вы честно выполняли всё по инструкции - обратитесь к нам (контакты на дне упаковки или в разделе контакты) и мы пришлём Вам новый росток.
+                        <br>
+                        - Вы не соблюдали условия и забыли о Вашем будущем дереве – к сожалению, мы не сможем Вам помочь, т.к. дело не в дереве.
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
