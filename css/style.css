@@ -6,9 +6,9 @@
 * {
   box-sizing: border-box;
 }
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -22,6 +22,11 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: var(--main);
   border-radius: 15px;
+}
+
+h3 {
+  margin: 5px 0;
+  font-weight: 500;
 }
 
 /* header */
@@ -286,7 +291,7 @@ section {
 }
 .card img {
   height: 50px;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 .download:after  {
   content: url("../img/download-icon.svg");
