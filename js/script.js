@@ -34,15 +34,15 @@ $( () => {
 
 
 
-//tabs
-const docs = document.querySelectorAll('.doc'); 
-
-    docs.forEach(doc => {
+//accordeon
+const accOpen = document.querySelectorAll('.doc'); 
+    accOpen.forEach(doc => {
         doc.addEventListener('click', () => {
             doc.classList.toggle('active');
         });
     });
 
+    
 //mobile menu
 const menuButton = document.querySelector('.menu-button');
 const menu = document.querySelector('.nav-menu');

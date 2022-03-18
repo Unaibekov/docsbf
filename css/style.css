@@ -252,6 +252,7 @@ section {
 .cards {
   display: flex;
   flex-flow: row wrap;
+  padding: 15px;
 }
 .card {
   cursor: pointer;
@@ -288,14 +289,13 @@ opacity: 50;
 
 
 /* accordeon */
-.docs {
-  max-width: 800px;
-  width: 90%;
-}
 .doc {
   cursor: pointer;
   margin: 0 auto;
   overflow: visible;
+  background: var(--lgray);
+  padding: 15px;
+  border-radius: 15px;
 }
 .question {
   display: flex;
@@ -303,7 +303,7 @@ opacity: 50;
   align-items: center;
 }
 .question:hover h3 {
-  color: #7ea629 !important;
+  color: var(--main) !important;
 }
 .answer {
   line-height: 1.6;
@@ -524,5 +524,11 @@ svg {
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: calc((100% / 1) - 10px);
   }
 }
