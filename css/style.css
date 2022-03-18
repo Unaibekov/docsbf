@@ -296,6 +296,7 @@ opacity: 50;
   background: var(--lgray);
   padding: 15px;
   border-radius: 15px;
+  margin-bottom: 10px;
 }
 .question {
   display: flex;
