@@ -478,6 +478,8 @@ tbody:hover {
   }
 }
 
+
+
 @media (max-width: 1024px) {
   .header {
     padding: 0 15px;
@@ -520,12 +522,10 @@ tbody:hover {
   }
   .menu-close {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
     border: none;
     background-color: #fff;
     cursor: pointer;
