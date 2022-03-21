@@ -61,6 +61,7 @@ h3 {
 }
 .nav-menu-item {
   margin-right: 30px;
+  position: relative;
 }
 .nav-menu-link {
   text-decoration: none;
