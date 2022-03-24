@@ -34,7 +34,18 @@ $( () => {
         pauseOnFocus:true,
         pauseOnHover:true,
         pauseOnDotsHover:true,
-      });  
+    });
+
+    $('.variable-width').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      centerMode: true,
+      variableWidth: true
+    });
+
+
       
     // smooth scroll
     $('a.nav-menu-link').click(function(){
