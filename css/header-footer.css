@@ -29,12 +29,13 @@
 .nav-menu-item {
   margin-right: 30px;
   position: relative;
+  transition: 0.2s ease-in;
+
 }
 .nav-menu-link {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
 }
@@ -49,15 +50,16 @@
   display: none;
   list-style: none;
   padding: 20px 0 0 0;
-  width: 360px;
+  min-width: 360px;
+  width: 100%;
   border-radius: 10px;
   overflow: hidden;
   z-index: 9;
-  box-shadow: 0px 20px 70px -30px #9c9c9c;
+  transition: 0.2s ease-in;
 
 }
 .sub-menu>li {
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   cursor: pointer;
 
 }
@@ -69,7 +71,7 @@
 }
 
 .link-active {
-  font-weight: 900;
+  font-weight: 700;
   color: var(--main) !important;
 }
 
@@ -151,7 +153,7 @@
     background-color: white;
     z-index: 9;
     display: flex;
-    align-items: center;
+    padding: 40px;
     justify-content: center;
     flex-direction: column;
     transform: translateX(100%);
@@ -161,7 +163,7 @@
     margin: 2% 0;
   }
   .nav-menu-link {
-    font-size: 20px;
+    font-size: 32px;
   }
   .menu-button {
     display: flex;
@@ -191,4 +193,11 @@
   .nav-contacts {
     margin-top: 20px;
   }
+  .sub-menu {
+    position: unset;
+  }
+  .sub-menu>li {
+    padding: 10px 0px;
+    cursor: pointer;
+}
 }

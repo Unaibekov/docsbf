@@ -27,11 +27,12 @@ a {
   text-decoration: none;
   color: black;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0 0 30px 0;
   font-weight: 900;
   font-family: 'Russo One', sans-serif;
   letter-spacing: 1px;
+  color: var(--main);
 }
 .w100 {
   width: 100%;
@@ -159,8 +160,45 @@ section {
   content: url("../img/download-icon.svg");
   position: absolute;
   left: 0;
-  top: 0;
+  top: 5px;
 }
+.feature {
+  padding-left: 40px;
+  margin: 15px;
+  position: relative;
+  font-weight: 500;
+}
+.addres:after  {
+  content: url("../img/point.svg");
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+.phone:after  {
+  content: url("../img/phone.svg");
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+.vk:after  {
+  content: url("../img/vk.svg");
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+.telegram:after  {
+  content: url("../img/telegram.svg");
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+.bullit:after  {
+  content: url("../img/bullit-alm.svg");
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
 .card:hover {
   box-shadow: 0 5px 30px 0 rgba(0,0,0,0.1);
   transition: all 0.2s ease-in-out;
