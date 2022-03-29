@@ -1,18 +1,19 @@
 @import url("header-footer.css");
 @import url("slider.css");
 
-
 :root {
   --main: #0AA373;
   --lgray: #F7F7F2;
 }
 * {
   box-sizing: border-box;
+}
+p {
   line-height: 1.5;
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 body::-webkit-scrollbar-track {
   background-color: #d9d9d9;
@@ -29,9 +30,7 @@ a {
 }
 h1, h2, h3, h4 {
   margin: 0 0 30px 0;
-  font-weight: 900;
-  font-family: 'Russo One', sans-serif;
-  letter-spacing: 1px;
+  font-size: 32px;
   color: var(--main);
 }
 .w100 {
@@ -44,32 +43,25 @@ h1, h2, h3, h4 {
   height: 100vh;
 }
 
-/* HEADING ================================*/
-.heading {
-  width: 50%;
-}
-.heading img {
-  height: 60px; margin-bottom: 30px;
-}
-.heading-block {
+/* content ================================*/
+.content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  padding: 10% 0;
+  text-align: left;
 }
-.heading-image {
+.content-image {
   height: 500px;
-  width: 500px;
-  margin: 0 50px 50px 0;
-  margin-bottom: 0;
+  margin: 0 50px;
 }
-.heading-image-project{
-  height: 300px;
-  width: 300px;
-  margin: 100px 50px 50px 50px;
+.content-image-project {
+  height: 30vh;
 }
-.heading-image img{
-  height: 100%;
+.content-logo {
+  height: 50px;
+  margin: 30px 0;
 }
 .title {
   font-size: 38px;
@@ -77,11 +69,10 @@ h1, h2, h3, h4 {
   margin-bottom: 30px;
   line-height: 1.2;
   color: var(--main);
-  font-family: 'Russo One', sans-serif;
   letter-spacing: 2px;
 }
 .subtitle {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* button ============================ */
@@ -109,12 +100,11 @@ h1, h2, h3, h4 {
   border: 2px solid var(--main) !important;
 }
 
-/* section============================ */
+/* section ============================ */
 .container {
   max-width: 1200px;
   width: 90%;
   margin: auto;
-  padding: 0 30px;
 }
 .lgray {
   background-color: var(--lgray);
@@ -122,25 +112,46 @@ h1, h2, h3, h4 {
 section {
   padding: 10% 0;
 }
-.section-heading {
-  margin: 0 auto 5%;
-}
 
-/* cards================================== */
-.cards {
+/* items ================================== */
+.items {
   display: flex;
   flex-flow: row wrap;
 }
-.card {
+.item-project {
   cursor: pointer;
   background-color: white;
   border-radius: 15px;
   width: calc((100% / 3) - 10px);
   transition: all 0.2s ease-in-out;
-  padding: 20px 50px 20px 20px;
+  padding: 20px;
   margin: 5px;
   font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+.item-project div {
+  font-size: 14px;
+}
+.item-project img {
+  height: 40px;
+  margin-bottom: 20px;
+}
+.item-project-link {
+  font-size: 14px;
+  margin-top: 20px;
+  color: grey;
+}
+.item-project:hover .item-project-link {
+  color: #0AA373;
+}
+.item-project:hover {
+  box-shadow: 0 5px 30px 0 rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+/* docs ========================================= */
 .doc-card {
   cursor: pointer;
   width: calc((100% / 3) - 30px);
@@ -152,19 +163,16 @@ section {
   font-size: 14px;
   min-height: 40px;
 }
-.card img {
-  height: 50px;
-  margin: 30px 0;
-}
+
 .download:after  {
   content: url("../img/download-icon.svg");
   position: absolute;
   left: 0;
-  top: 5px;
+  top: 0;
 }
 .feature {
   padding-left: 40px;
-  margin: 15px;
+  margin: 25px 0;
   position: relative;
   font-weight: 500;
 }
@@ -197,11 +205,6 @@ section {
   position: absolute;
   left: 0;
   top: 0px;
-}
-
-.card:hover {
-  box-shadow: 0 5px 30px 0 rgba(0,0,0,0.1);
-  transition: all 0.2s ease-in-out;
 }
 
 /* table ==================================== */
@@ -312,7 +315,7 @@ tbody:hover {
   align-items: flex-start;
 }
 .project-block img {
-  max-width: 400px;
+  max-width: 500px;
   width: 90%;
   margin: 50px;
 }
@@ -328,16 +331,26 @@ tbody:hover {
   height: 20px;
   width: 20px;
 }
-/* search-block ===================== */
-.search-block {
-  padding: 10% 0 5%;
-}
-.search-block-inner {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: flex-end;
+.contacts {
+  padding: 30px;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
+.contacts-info {
+  width: 40%;
+}
+.contacts .button {
+  margin: 30px 0 50px;
+}
+.contacts iframe {
+  border-radius: 10px;
+  width: 60%;
+}
+
+/* search ===================== */
 #search {
   border: none;
   padding: 15px;
@@ -355,20 +368,12 @@ tbody:hover {
     font-size: 18px;
     margin: 15px 0 20px;
   }
-  .heading-image {
-    height: 30vh;
-    width: auto;
-    margin: auto;
-    margin-bottom: 50px;
+  .content-image-project {
+    margin: 50px 0px;
   }
-  .heading {
-    width: 100%;
-    text-align: center;
-  }
-  .heading-block {
+  .content {
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    text-align: center;
   }
 }
 
@@ -376,21 +381,23 @@ tbody:hover {
   .container {
     padding: 0;
   }
-  .card {
+  .project {
     width: calc((100% / 1) - 10px);
   }
   .doc-card {
     width: calc((100% / 1) - 10px);
     margin: 20px 15px;
   }
-  .search-block-inner {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: flex-end;
+  .project-block {
     flex-direction: column-reverse;
   }
-  .project-block {
-    display: flex;
+  .contacts {
     flex-direction: column;
+  }
+  .contacts-info {
+    flex-direction: column;
+  }
+  .contacts iframe, .contacts-info {
+    width: 100%;
   }
 }
