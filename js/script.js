@@ -29,7 +29,7 @@ $( () => {
         adaptiveHeight:true,
         speed:700,
         easing:'ease',
-        autoplay:false,
+        autoplay:true,
         autoplaySpeed:5000,
         pauseOnFocus:true,
         pauseOnHover:true,
@@ -38,6 +38,7 @@ $( () => {
 
     $('.variable-width').slick({
       dots: true,
+      autoplay:true,
       arrows: true,
       infinite: true,
       speed: 300,
@@ -70,6 +71,7 @@ $( () => {
       highlight: true,
       nodata: 'Результаты не найдены',
       ignore_accents: true,
+      navigation: true
     });
 
 });

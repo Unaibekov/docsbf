@@ -183,11 +183,16 @@
   .nav-contacts {
     margin-top: 20px;
   }
+  .sub-menu>li {
+    padding: 15px 0px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
   .sub-menu {
     position: unset;
-  }
-  .sub-menu>li {
-    padding: 10px 0px;
-    cursor: pointer;
+    display: block;
+    padding: 0px 0px 0px 20px;
   }
 }
