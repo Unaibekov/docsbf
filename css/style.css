@@ -381,11 +381,13 @@ tbody:hover {
   .container {
     padding: 0;
   }
-  .project {
+  .content-image {
+    height: 30vh;
+  }
+  .item-project, .doc-card {
     width: calc((100% / 1) - 10px);
   }
   .doc-card {
-    width: calc((100% / 1) - 10px);
     margin: 20px 15px;
   }
   .project-block {
