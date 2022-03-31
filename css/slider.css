@@ -35,6 +35,10 @@
   position: relative;
   overflow: hidden;
 }
+.variable-width {
+  background: #f7f7f2;
+  padding: 5% 0;
+}
 .slick-slide {
   overflow: hidden;
   display: flex;
