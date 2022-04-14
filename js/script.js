@@ -60,6 +60,7 @@ $( () => {
     $('.menu-button').click(function(){
         $('.nav-menu').addClass('is-active');
         $('.menu-close').addClass('is-active');
+        $('body').css('overflow','hidden')
     });
 
     $('.menu-close').click(function(){
@@ -74,4 +75,7 @@ $( () => {
       navigation: true
     });
 
+    $('.visibility').click(function(){
+        $('.header').toggleClass('header-visibility');
+    });
 });

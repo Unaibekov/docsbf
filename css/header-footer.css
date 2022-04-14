@@ -1,3 +1,10 @@
+.visibility img {
+  height: 20px;
+}
+.header-visibility {
+  margin-top: 55px;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -30,14 +37,15 @@
 .nav-menu-link {
   text-decoration: none;
   color: black;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  /* text-transform: uppercase;
+  letter-spacing: 1px; */
   cursor: pointer;
   font-size: 16px;
 }
 .nav-menu-link:hover {
   color: var(--main) !important;
 }
+
 .sub-menu {
   position: absolute;
   left: 0;
