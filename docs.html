@@ -6,543 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>БФ «Татнефть»</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/animate.css" />
   </head>
   <body>
-    <div class="bg-docs">
-      <header class="header">
-        <a href="docs.html">
-          <div class="logo">
-            <img id="top" src="img/logoTnFlame.svg" alt="logoFlame" />
-            <img
-              id="top"
-              src="img/logoTnName.svg"
-              class="logoName"
-              alt="logoName"
-            />
-          </div>
-        </a>
-        <nav class="nav">
-          <button class="menu-button">
-            <svg
-              width="32"
-              height="30"
-              viewBox="0 0 32 30"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3 3H29.5"
-                stroke="#0AA373"
-                stroke-width="5"
-                stroke-linecap="round"
-              />
-              <path
-                d="M3 15H29.5"
-                stroke="#0AA373"
-                stroke-width="5"
-                stroke-linecap="round"
-              />
-              <path
-                d="M3 27H29.5"
-                stroke="#0AA373"
-                stroke-width="5"
-                stroke-linecap="round"
-              />
-            </svg>
-          </button>
-          <button class="menu-close">
-            <svg
-              width="33"
-              height="29"
-              viewBox="0 0 33 29"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3 14H29.5"
-                stroke="#0AA373"
-                stroke-width="5"
-                stroke-linecap="round"
-              />
-              <path
-                d="M18.3137 3L29.6274 14.3137L18.3137 25.6274"
-                stroke="#0AA373"
-                stroke-width="5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-          <ul class="nav-menu">
-            <li class="nav-menu-item">
-              <a href="index.html" class="nav-menu-link">О нас</a>
-            </li>
-            <li class="nav-menu-item">
-              <div class="nav-menu-link">Наши проекты</div>
-              <ul class="sub-menu">
-                <li>
-                  <a class="sub-menu-link" href="almetrika.html"
-                    >Интерактивный центр «Альметрика»</a
-                  >
-                </li>
-                <li>
-                  <a class="sub-menu-link" href="a1002.html"
-                    >Школа анимации «А1002»</a
-                  >
-                </li>
-                <li>
-                  <a class="sub-menu-link" href="daa.html"
-                    >Dиджитал Академия<br />Альметьевск</a
-                  >
-                </li>
-                <li>
-                  <a class="sub-menu-link" href="museum.html"
-                    >Музей тюркских<br />музыкальных инструментов</a
-                  >
-                </li>
-                <li>
-                  <a class="sub-menu-link" href="laboratory.html"
-                    >«Биологические лаборатории с&nbsp;теплицами»</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-menu-item">
-              <a href="docs.html" class="nav-menu-link link-active"
-                >Сведения об образовательной организации</a
-              >
-            </li>
-            <li class="nav-menu-item">
-              <a href="#documents" class="nav-menu-link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div class="container">
-        <div class="content">
-          <img
-            class="vh30 m50"
-            src="img/fileholder.png"
-            alt="fileholder"
-          />
-          <div class="w100">
-            <div class="title mb50">Сведения об образовательной организации</div>
-            <input
-              id="search"
-              placeholder="Поиск"
-              name="search"
-              type="text"
-              data-toggle="hideseek"
-              data-list=".list"
-            />
-          </div>
+    <header class="header">
+      <a href="docs.html">
+        <div class="logo">
+          <img id="top" src="img/logoTnFlame.svg" alt="logoFlame" />
+          <img id="top" src="img/logoTnName.svg" class="logoName" alt="logoName" />
         </div>
+      </a>
+      <nav class="nav">
+        <button class="menu-button">
+          <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg" >
+            <path d="M3 3H29.5" stroke="#0AA373" stroke-width="5" stroke-linecap="round" />
+            <path d="M3 15H29.5" stroke="#0AA373" stroke-width="5" stroke-linecap="round" />
+            <path d="M3 27H29.5" stroke="#0AA373" stroke-width="5" stroke-linecap="round" />
+          </svg>
+        </button>
+        <button class="menu-close">
+          <svg width="33" height="29" viewBox="0 0 33 29" fill="none" xmlns="http://www.w3.org/2000/svg" >
+            <path d="M3 14H29.5" stroke="#0AA373" stroke-width="5" stroke-linecap="round" />
+            <path d="M18.3137 3L29.6274 14.3137L18.3137 25.6274" stroke="#0AA373" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="index.html" class="nav-menu-link">О нас</a>
+          </li>
+          <li class="nav-menu-item">
+            <div class="nav-menu-link">Наши проекты</div>
+            <ul class="sub-menu">
+              <li><a class="sub-menu-link" href="almetrika.html">Интерактивный центр «Альметрика»</a></li>
+              <li><a class="sub-menu-link" href="a1002.html">Школа анимации «А1002»</a></li>
+              <li><a class="sub-menu-link" href="daa.html">Dиджитал Академия<br />Альметьевск</a></li>
+              <li><a class="sub-menu-link" href="museum.html">Музей тюркских<br />музыкальных инструментов</a></li>
+              <li><a class="sub-menu-link" href="laboratory.html">«Биологические лаборатории с&nbsp;теплицами»</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu-item">
+            <div class="nav-menu-link link-active">Сведения об образовательной организации</div>
+            <ul class="sub-menu">
+              <li><a href="docs.html" class="link-active">Основные сведения</a></li>
+              <li><a href="structure.html">Структура и органы управления образовательной организацией</a></li>
+              <li><a href="documents.html">Документы</a></li>
+              <li><a href="education.html">Образование</a></li>
+              <li><a href="management.html">Руководство. Педагогический (научно-педагогический) состав</a></li>
+              <li><a href="material.html">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
+              <li><a href="paid.html">Платные образовательные услуги</a></li>
+              <li><a href="finance.html">Финансово-хозяйственная деятельность</a></li>
+              <li><a href="vacancy.html">Вакантные места для приема (перевода) обучающихся</a></li>
+              <li><a href="accessible.html">Доступная среда</a></li>
+              <li><a href="international.html">Международное сотрудничество</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu-item visibility">
+            <img id="specialButton" style="cursor:pointer;" src="https://lidrekon.ru/images/special.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div style="width: 100%;">
+        <div class="bg-docs">
+          <div class="container">
+            <div class="content">
+              <img class="vh30 m50" src="img/fileholder.png" alt="fileholder" />
+              <div class="w100">
+                <div class="title mb50">Основные сведения</div>
+              </div>
+            </div>
+          </div>
+          <a href="#hero" id="top-second" class="top-second"><span></span></a>
+        </div>
+        <div class="list">
+        <!-- basic -->
+        <section id="basic">
+          <div class="container">
+            <p><b>Полное наименование организации:</b> Автономная некоммерческая организация дополнительного образования Центр развития инновационных и просвятительских проектов «Академия цифрового творчества»</p>
+            <p><b>Сокращенное наименование организации: </b>АНО ДО «Академия цифрового творчества»</p>
+            <p><b>Дата создания организации: </b>«24» августа 2020 года</p>
+            <p><b>Дата получения образовательной лицензии:</b> «29» ноября 2021 года</p>
+            <p><b>Учредители образовательной организации является </b>БЛАГОТВОРИТЕЛЬНЫЙ ФОНД «ТАТНЕФТЬ».</p>
+            <p><b>Юридический адрес образовательной организации:</b> 423450, Республика Татарстан, город Альметьевск, проспект Израила Зарипова, дом 41, помещение 1002</p>
+            <p><b>Режим и график работы:</b>
+              <br/>Понедельник - пятница: 9.00 до 18.00
+              <br/>Перерыв на обед: 13.00 до 14.00
+              <br/>Суббота-воскресенье: выходной
+            </p>
+            <p><b>Контактная информация: </b>
+              <br/><a href="tel:+78002345627">8-800-23456-27</a>  - Контактный номер
+              <br/><a href="tel:+79172254234">8-917-225-42-34</a>  - Администратор
+              <br/>электронный адрес: info@almetrika.ru
+            </p>
+            <p><b>Место осуществление образовательной деятельности:</b>
+              <br/>423455, Республика Татарстан, город Альметьевск, улица Ленина, дом 69А;
+              <br/>423450, Республика Татарстан, город Альметьевск, проспект Израила Зарипова, дом 41, помещение 1002
+              <br/>423450, Республика Татарстан, город Альметьевск, ул. Шевченко, дом 108, помещение 1000
+            </p>
+          </div>
+        </section>
+
       </div>
-      <a href="#hero" id="top-second" class="top-second"><span></span></a>
     </div>
-    <div class="list">
-      <!-- basic -->
-
-      <section>
-        <div class="container">
-          <h2>Основные сведения</h2>
-          <div class="items">
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О полном и сокращенном (при наличии) наименовании образовательной
-              организации</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О дате создания образовательной организации</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Об учредителе (учредителях) образовательной организации</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О месте нахождения образовательной организации</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О режиме и графике работы образовательной организации</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О контактных телефонах образовательной организации</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Об адресах электронной почты образовательной организации</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О местах осуществления образовательной деятельности</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- structure -->
-
-      <section class="lgray">
-        <div class="container">
-          <h2>Структура и органы управления образовательной организацией</h2>
-          <div class="items">
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Об адресах официальных сайтов в
-              информационно-телекоммуникационной сети "Интернет" структурных
-              подразделений (органов управления) образовательной организации
-              (при наличии официальных сайтов)</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О местах нахождения структурных подразделений (органов
-              управления) образовательной организации (при наличии структурных
-              подразделений (органов управления)</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Об адресах электронной почты структурных подразделений (органов
-              управления) образовательной организации (при наличии электронной
-              почты)</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О структуре и об органах управления образовательной организации с
-              указанием наименований структурных подразделений (органов
-              управления)</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О фамилиях, именах, отчествах (при наличии) и должностях
-              руководителей структурных подразделений</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О положениях о структурных подразделениях</a
-            >
-          </div>
-          <div class="wrapper">
-            <table>
-              <tr>
-                <th>№ п/п</th>
-                <th>Должность</th>
-                <th>ФИО</th>
-                <th>Контактная информация</th>
-                <th>Положение о структурном подразделении</th>
-              </tr>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Директор</td>
-                  <td>Савинич Александр Сергеевич</td>
-                  <td>
-                    г. Альметьевс, проспект Изаила Зарипова, д.41, помещение
-                    1002, тел: +7 (917) 234-56-27
-                  </td>
-                  <td>Документ (pdf)</td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <td>2</td>
-                  <td>Заместитель директора</td>
-                  <td>Иванов Иван Иванович</td>
-                  <td>
-                    г. Альметьевс, проспект Изаила Зарипова, д.41, помещение
-                    1002, тел: +7 (917) 234-56-27
-                  </td>
-                  <td>Документ (pdf)</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <!-- documents -->
-
-      <section>
-        <div class="container">
-          <h2>Документы</h2>
-          <div class="items">
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Порядок оформления возникновения, приостановления и прекращения
-              отношений между образовательной организацией и обучающимися и
-              (или) родителями (законными представителями) несовершеннолетних
-              обучающихся</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Локальные нормативные акты образовательной организации по
-              основным вопросам организации и осуществления образовательной
-              деятельности, в том числе регламентирующие</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Формы, периодичность и порядок текущего контроля успеваемости и
-              промежуточной аттестации обучающихся</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Порядок и основания перевода, отчисления и восстановления
-              обучающихся</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Устав образовательной организации</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Правила внутреннего распорядка обучающихся</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Правила внутреннего трудового распорядка</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Коллективный договор (при наличии)</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Отчет о результатах самообследования</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Правила приема обучающихся</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Режим занятий обучающихся</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- education -->
-
-      <section class="lgray">
-        <div class="container">
-          <h2>Образование</h2>
-          <p><b>Язык преподавания:</b> Русский язык</p>
-          <p>
-            <b>Срок действия государственной аккредитации:</b> Аккредитация не
-            требуется
-          </p>
-          <p>Лицензия на осущестление образовательной деятельности (файл)</p>
-          <div class="wrapper">
-            <table>
-              <tr>
-                <th>Наименование программы</th>
-                <th>Форма обучения</th>
-                <th>Срок обучения</th>
-                <th>Календарный план</th>
-                <th>Численность обучающихся</th>
-                <th>Методические материалы</th>
-              </tr>
-              <tbody>
-                <tr>
-                  <td>Программа (ссылка на файл)</td>
-                  <td>очная</td>
-                  <td>1 год</td>
-                  <td>ссылка на файл</td>
-                  <td>10 чел</td>
-                  <td>ссылки на файл</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <!-- management team -->
-
-      <section>
-        <div class="container">
-          <h2>Руководство. Педагогический (научно-педагогический) состав</h2>
-          <div class="wrapper">
-            <table>
-              <tr>
-                <th>№ п/п</th>
-                <th>ФИО</th>
-                <th>Должность / основной или совместитель</th>
-                <th>Дисциплины которые ведет</th>
-                <th>Образование / степень</th>
-                <th>Общий стаж</th>
-                <th>Стаж работы по специальности</th>
-                <th>Данные о повышении квалификации</th>
-              </tr>
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <!-- material -->
-
-      <section class="lgray">
-        <div class="container">
-          <h2>
-            Материально-техническое обеспечение и оснащенность образовательного
-            процесса
-          </h2>
-          <p>Сведения о наличии оборудованных учебных кабинетов</p>
-          <p>Информация о библиотеке</p>
-        </div>
-      </section>
-
-      <!-- Paid -->
-
-      <section>
-        <div class="container">
-          <h2>Платные образовательные услуги</h2>
-          <div class="items">
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О порядке оказания платных образовательных услуг, в том числе
-              образец договора об оказании платных образовательных услуг</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Об утверждении стоимости обучения по каждой образовательной
-              программе</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- finance -->
-
-      <section class="lgray">
-        <div class="container">
-          <h2>Финансово-хозяйственная деятельность</h2>
-          <div class="wrapper">
-            <table>
-              <tr>
-                <th>
-                  Объем образовательной деятельности, финансовое обеспечение
-                  которой осуществляется
-                </th>
-              </tr>
-              <tbody>
-                <tr>
-                  <td>
-                    По договорам об образовании за счет средств физических и
-                    (или) юридических лиц (тыс. руб.)
-                  </td>
-                  <td>52,3</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="items">
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Информацию о поступлении финансовых и материальных средств по
-              итогам финансового года</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Информацию о расходовании финансовых и материальных средств по
-              итогам финансового года</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Копия плана финансово-хозяйственной деятельности образовательной
-              организации, утвержденного в установленном законодательством
-              Российской Федерации порядке, или бюджетной сметы образовательной
-              организации</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- vacancy -->
-
-      <section>
-        <div class="container">
-          <h2>Вакантные места для приема (перевода) обучающихся</h2>
-          <div>
-            Вакантные места для приема обучающихся в организацию отсутствуют на
-            2022-2023 учебный год
-          </div>
-          <div class="wrapper">
-            <table>
-              <tr>
-                <th>Образовательная программа</th>
-                <th>
-                  количество вакантных мест для приёма (перевода) за счёт
-                  средств физических и (или) юридических лиц
-                </th>
-              </tr>
-              <tbody>
-                <tr>
-                  <td>Дополнительные общеобразовательные программы</td>
-                  <td>0</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div>Контактные данные ответственного лица за прием обучающихся:</div>
-        </div>
-      </section>
-
-      <!-- accessible -->
-
-      <section class="lgray">
-        <div class="container">
-          <h2>Доступная среда</h2>
-          <div class="items">
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О доступе к информационным системам и
-              информационно-телекоммуникационным сетям, приспособленным для
-              использования инвалидами и лицами с ограниченными возможностями
-              здоровья</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Об объектах для проведения практических занятий, приспособленных
-              для использования инвалидами и лицами с ограниченными
-              возможностями здоровья</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О средствах обучения и воспитания, приспособленных для
-              использования инвалидами и лицами с ограниченными возможностями
-              здоровья</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Об электронных образовательных ресурсах, к которым обеспечивается
-              доступ инвалидов и лиц с ограниченными возможностями здоровья</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >Об обеспечении беспрепятственного доступа в здания
-              образовательной организации</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О наличии специальных технических средств обучения коллективного
-              и индивидуального пользования</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О специально оборудованных учебных кабинетах</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О специальных условиях охраны здоровья</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- international -->
-
-      <section>
-        <div class="container">
-          <h2>Международное сотрудничество</h2>
-          <div class="items">
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О заключенных и планируемых к заключению договорах с иностранными
-              и (или) международными организациями по вопросам образования и
-              науки (при наличии)</a
-            >
-            <a target="_blank" href="/docs/file.pdf" class="doc-card download"
-              >О международной аккредитации образовательных программ (при
-              наличии)</a
-            >
-          </div>
-        </div>
-      </section>
-    </div>
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.hideseek.min.js"></script>
     <script src="js/slick.min.js"></script>

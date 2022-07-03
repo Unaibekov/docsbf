@@ -60,12 +60,14 @@ $( () => {
     $('.menu-button').click(function(){
         $('.nav-menu').addClass('is-active');
         $('.menu-close').addClass('is-active');
-        $('body').css('overflow','hidden')
+        $('body').css('overflow','hidden');
     });
 
     $('.menu-close').click(function(){
         $('.nav-menu').removeClass('is-active');
         $('.menu-close').removeClass('is-active');
+        $('body').css('overflow','auto');
+
     });
 
     $('#search').hideseek({
@@ -75,7 +77,11 @@ $( () => {
       navigation: true
     });
 
-    $('.visibility').click(function(){
-        $('.header').toggleClass('header-visibility');
+    $('#specialButton').click(function(){
+        $('.header').addClass('header-visibility');
+    });
+
+    $('.special-quit').click(function(){
+        $('.header').removeClass('header-visibility');
     });
 });
